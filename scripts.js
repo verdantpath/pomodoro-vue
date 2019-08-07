@@ -55,6 +55,11 @@ new Vue({
       this.second = 0;
     },
     _tick: function() {
+      // update timestamp that is used in image src
+      if (this.second % 10 === 0) {
+        this.timestamp = new Date().getTime();
+      }
+
       // if second is not 0, just decrement second
       if (this.second !== 0) {
         this.second--;

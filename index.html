@@ -32,7 +32,7 @@
       </div>
     </div>
     <div class="well" :class="{ 'hidden': pomodoroState === 'work' }">
-      <img :src="'http://thecatapi.com/api/images/get?type=jpg&size=med'" />
+      <img :src="'http://thecatapi.com/api/images/get?type=jpg&size=med&ts=' + timestamp" />
     </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.js"></script>
